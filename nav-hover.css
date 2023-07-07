@@ -1,0 +1,156 @@
+/* Basic Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, system-ui;
+}
+a {
+  text-decoration: none;
+}
+header{
+    background: url(./ok.jpg) no-repeat center center /cover;
+    min-height: 100vh;
+}
+/* -------------------- */
+.logo{
+    width: 79px;
+    height: 79px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.myLO{
+    width: inherit;
+    height: inherit;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.nav-list a{
+    display: inline-block;
+    padding: 5px 15px;
+    font-style: 15px;
+    text-align: center;
+    background-repeat: 10px;
+    color: #333;
+    font-weight: 500;
+    border-radius: 10px;
+    /* border: 1px solid rgb(89, 0, 255); */
+}
+/* -------------------- */
+.nav-list{
+    margin-left: 200px;
+    display: flex;
+    position: relative;
+    z-index: 5;
+}
+/* -------------------- */
+.nav-list a:nth-child(6){
+    padding-right: 160px;
+}
+.hover{
+    position: absolute;
+    background-color: rgba(0,0,0,0.1);
+    /* width: 92px; */
+    height: 34px; 
+    border-radius: 10px;
+    transition: all cubic-bezier(0.6, 0.04, 0.98, 0.335) 0.7s;
+    opacity: 0;
+    z-index: -1;
+}
+.nav-list a:nth-child(1):hover ~ .hover{
+    /* .nav-list .classname_in<a/>_tag */
+    /* **~** -> etar mane holo ee er somosto bhai ke dekhe 
+    -> maney ekta/single container or div err vitor err joto vai achay tader dekhe arr tader upor kaaj korey
+    */
+    width: 92px;
+    opacity: 1;
+    left: 0;
+}
+.nav-list a:nth-child(2):hover ~ .hover{
+    /* .nav-list .classname_in<a/>_tag */
+    /* **~** -> etar mane holo ee er somosto bhai ke dekhe 
+    -> maney ekta/single container or div err vitor err joto vai achay tader dekhe arr tader upor kaaj korey
+    */
+    width: 92px;
+    opacity: 1;
+    /* left: (0+92)px; */
+    left: 92px;
+}
+.nav-list a:nth-child(3):hover ~ .hover{
+    /* .nav-list .classname_in<a/>_tag */
+    /* **~** -> etar mane holo ee er somosto bhai ke dekhe 
+    -> maney ekta/single container or div err vitor err joto vai achay tader dekhe arr tader upor kaaj korey
+    */
+    width: 92px;
+    opacity: 1;
+    /* left: (0+92+92)px; */
+    left: 184px;
+}
+.nav-list a:nth-child(4):hover ~ .hover{
+    /* .nav-list .classname_in<a/>_tag */
+    /* **~** -> etar mane holo ee er somosto bhai ke dekhe 
+    -> maney ekta/single container or div err vitor err joto vai achay tader dekhe arr tader upor kaaj korey
+    */
+    width: 92px;
+    opacity: 1;
+    /* left: (0+92+92+92)px; */
+    left: 276px;
+}
+.nav-list a:nth-child(5):hover ~ .hover{
+    /* .nav-list .classname_in<a/>_tag */
+    /* **~** -> etar mane holo ee er somosto bhai ke dekhe 
+    -> maney ekta/single container or div err vitor err joto vai achay tader dekhe arr tader upor kaaj korey
+    */
+    width: 92px;
+    opacity: 1;
+    /* left: (0+92+92+92+92)px; */
+    left: 368px;
+}
+.nav-list a:nth-child(6):hover ~ .hover{
+    /* .nav-list .classname_in<a/>_tag */
+    /* **~** -> etar mane holo ee er somosto bhai ke dekhe 
+    -> maney ekta/single container or div err vitor err joto vai achay tader dekhe arr tader upor kaaj korey
+    */
+    width: 92px;
+    opacity: 1;
+    /* left: (92*5)px; */
+    left: 460px;
+}
+.nav-list a:nth-child(7):hover ~ .hover{
+    /* .nav-list .classname_in<a/>_tag */
+    /* **~** -> etar mane holo ee er somosto bhai ke dekhe 
+    -> maney ekta/single container or div err vitor err joto vai achay tader dekhe arr tader upor kaaj korey
+    */
+    width: 92px;
+    opacity: 1;
+    /* left: (92*6)px; */
+    left: 700px;
+}
+.nav-list a:nth-child(8):hover ~ .hover{
+    /* .nav-list .classname_in<a/>_tag */
+    /* **~** -> etar mane holo ee er somosto bhai ke dekhe 
+    -> maney ekta/single container or div err vitor err joto vai achay tader dekhe arr tader upor kaaj korey
+    */
+    width: 92px;
+    opacity: 1;
+    /* left: 97*7px; */
+    left: 800px;
+}
+.nav-list a:nth-child(9):hover ~ .hover{
+    /* .nav-list .classname_in<a/>_tag */
+    /* **~** -> etar mane holo ee er somosto bhai ke dekhe 
+    -> maney ekta/single container or div err vitor err joto vai achay tader dekhe arr tader upor kaaj korey
+    */
+    width: 92px;
+    opacity: 1;
+    /* left: (92*8)px; */
+    left: 900px;
+}
